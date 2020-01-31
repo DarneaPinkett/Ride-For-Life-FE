@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import './App.css';
 import { RideContext } from './contexts/Ride-Context'
 import {axiosWithAuth} from "./utils/AxiosWithAuth";
+import Route from 'react-router-dom';
+import Login from './components/login'
 
 const [rideForLife, setRideForLife] = useState([])
 
@@ -22,6 +24,7 @@ function App() {
   return (
       <RideContext.Provider value={{ rideForLife }}>
         <div className="App">
+            <Route exact path='/' component={Login} />
             <header className="App-header">
             </header>
         </div>
