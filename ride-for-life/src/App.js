@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import { RideContext } from './contexts/Ride-Context'
 import {axiosWithAuth} from "./utils/AxiosWithAuth";
